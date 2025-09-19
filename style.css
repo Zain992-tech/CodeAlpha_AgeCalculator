@@ -1,0 +1,102 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: rgba(165, 180, 252, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container{
+    background: radial-gradient(ellipse at left, #6366f1, #a5b4fc, #e0e7ff);
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 10px 10px 6px rgb(92, 89, 89);
+    text-align: center;
+    padding: 10px;
+    width: 600px;
+    height: 50%;
+}
+
+input{
+    width: 25%;
+    height: 30px;
+    text-align: center;
+    border-radius: 5px;
+    margin: 0 0 10px 0;
+    border: 1px solid black;
+    
+}
+
+h1{
+    color: rgba(33, 37, 41, 1);
+    font-size: 30px;
+    font-weight: bolder;
+    margin: 25px 0 40px 0;
+}
+
+button{
+    background-color: #00204A;
+    color: white;
+    border-radius: 30px;
+    height: 35px;
+    width: 200px;
+    margin-top: 30px;
+}
+
+.clear{
+    background-color: red;
+    width: 55px;
+    height: 25px;
+}
+
+.calculate:hover{
+    height: 38px;
+    width: 208px;
+    font-size: 18px;
+    box-shadow: 3px 6px 10px white;
+}
+
+.calculate:active{
+    background-color: white;
+    color: red;
+}
+
+.error{
+    color: red;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.result{
+    font-size: 20px;
+    font-weight: bold;
+    color: Purple;
+    margin-top: 40px;
+}
+
+@media(max-width: 768px) {
+    .container{
+        width: 500px;
+        height: 60vh;
+    }
+}
+
+@media(max-width: 425px) {
+    .container{
+        border: none;
+        box-shadow: none;
+        width: 100vw;
+        height: 100vh;
+    }
+
+    h1{
+        margin-top: 120px;
+    }
+}

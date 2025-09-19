@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="It calculates the age in Years, Months, and Days">
+    <meta name="author" content="Zain">
+    <title>Age Calculator</title>
+    <link rel = "shortcut icon" href="calculator.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Age Calculator</h1>
+        <div>
+            <input id="day" type="number" placeholder="DD" min="1" max="31">
+            <input id="month" type="number" placeholder="MM" min="1" max="12">
+            <input id="year" type="number" placeholder="YYYY" min="1900">
+        </div>
+        <button class="calculate" onclick="calculateAge()">Calculate Age</button>
+        <button class="clear" onclick="clearForm()">Reset</button>
+        <p id="error" class="error"></p>
+        <p id="result" class="result"></p>
+    </div>
+
+    <script src="script.js"></script>   
+</body>
+</html>
